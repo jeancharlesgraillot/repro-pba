@@ -120,6 +120,9 @@ body {
     .enseignant {
         background: url("../img/Enseignant.jpg") !important;
     }
+    .main-group {
+        height: 512px;
+    }
     .card p {
         background: rgba(233, 232, 234, 0.7) !important;
     }
@@ -136,17 +139,19 @@ body {
     .pba {
         font-size: 2rem !important;
     }
+    .oeuvre4 .card-text,
+    .oeuvre8 .card-text,
+    .oeuvre12 .card-text {
+        right: 20px !important;
+        top: 30% !important;
+    }
 }
 
 .main {
     background: #1D1D1E;
     border: none;
+    margin: 0 !important;
 }
-
-.main-group {
-    height: 512px;
-}
-
 .card p {
     text-align: center;
     font-size: 1.2rem;
@@ -168,11 +173,16 @@ body {
     position: relative;
     top: 30%;
 }
+
 .card {
     background-position: center center !important;
     background-size: cover !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
-.rang1 .card p, .rang2 .card p  {
+
+.rang1 .card p,
+.rang2 .card p {
     position: relative;
     top: 200px;
 }
@@ -180,6 +190,78 @@ body {
 .vignette {
     background: url("../img/Beaux-Gosses.jpg");
     height: 480px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.incoutournable {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.oeuvre4 {
+    background: url("../img/4-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
+
+.oeuvre8 {
+    background: url("../img/8-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
+
+.oeuvre12 {
+    background: url("../img/12-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
+
+.oeuvre4 .card-text,
+.oeuvre8 .card-text,
+.oeuvre12 .card-text {
+    background: rgba(255, 255, 255, 1) !important;
+    position: relative;
+    height: 150px;
+    margin: auto;
+    top: 30%;
+    text-align: right !important;
+}
+
+.oeuvre4 b,
+.oeuvre8 b,
+.oeuvre12 b {
+    font-size: 3rem;
+}
+.appli {
+    background: #D8383F;
+    color: #fff;
+}
+.appliDownload {
+    border: 2px solid #fff;
+    height: 60px;
+    line-height: 60px;
+    padding: 14px;
+}
+.st0,
+.st2,
+g {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    fill: #FFF;
+}
+.appli:hover {
+    background: #fff;
+    color: #D8383F;
+}
+.appli g:hover{
+    fill: #000;
+}
+
+.st1 {
+    fill: #D8383F;
 }
 
 /* ==========================================================================
