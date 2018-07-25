@@ -318,6 +318,14 @@ textarea {
   background-color: white;
 }
 
+.backgroundOrangePink{
+  background-color: #d8383f;
+}
+
+.colorOrangePink{
+  color: #d8383f;
+}
+
 .colorWhite{
   color: white;
 }
@@ -484,6 +492,11 @@ textarea {
   padding: 23.5px 20px 0px 23.5px;
 }
 
+.buttonGallery span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .bG1,
 .bG2{
   border: 3px solid white;
@@ -498,7 +511,8 @@ textarea {
 
 .instagramGallery,
 .photoGallery{
-  height: 357px;
+  min-height: 357px;
+  max-height: 1785px;
 
 }
 
@@ -530,4 +544,70 @@ textarea {
 
 .instagramGallery div:nth-child(5){
   background-image: url("../img/statue.jpg");
+}
+
+/************************Section5 Appli mobile*********************************/
+
+.appliMobile{
+  min-height: 150px;
+}
+
+.st0, .st2 , g {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    fill: #FFF;
+}
+.st1{
+  fill: #D8383F;
+}
+
+.appliMobile p,
+.appliMobile span{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+
+.appliMobile p span{
+  font-weight: bold;
+  border: 3px solid white;
+  line-height: 100px;
+}
+
+.imgDevices,
+.textAppli{
+  margin: 0;
+  padding: 0;
+}
+
+/****************************Lille*********************************************/
+
+.lille,
+.culture{
+  border: 3px solid black;
+}
+
+.lilleCulture span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.lilleCulture a{
+  text-decoration: none;
+}
+
+@media (min-width: 1200px){
+
+  .appliMobile p span{
+    border: 0;
+    line-height: normal;
+  }
+
+  .lille,
+  .culture{
+    border: 0;
+  }
+
 }
