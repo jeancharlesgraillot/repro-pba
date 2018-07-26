@@ -369,6 +369,66 @@ footer a:hover{
     font-family: 'pba';
     font-size: 1.4rem;
 }
+@media (max-width:767px){
+    .list-inline-item {
+        display: block !important;
+    }
+    .list-inline ul{
+        padding:5px;
+    }
+    .contacter span::before {
+        content: "\e92b";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .emotion span::before {
+        content: "\e92e";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .info::before {
+        content: "\e938";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .musee::before {
+        content: "\e921";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .presse::before {
+        content: "\e927";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .twitter::before {
+        content: "\e934";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .facebook::before {
+        content: "\e93a";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .insta::before {
+        content: "\e91c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .youtube::before {
+        content: "\e93c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    footer h2 {
+        font-size: 1.1rem;
+    }
+    .icon {
+        display: inherit;
+    }
+
+}
 
 /* ==========================================================================
    Helper classes
