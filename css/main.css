@@ -370,10 +370,10 @@ footer a:hover{
     font-size: 1.4rem;
 }
 @media (max-width:767px){
-    .list-inline-item {
+    footer .list-inline-item {
         display: block !important;
     }
-    .list-inline ul{
+    footer .list-inline ul{
         padding:5px;
     }
     .contacter span::before {
