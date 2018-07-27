@@ -299,6 +299,136 @@ g {
 .st1 {
     fill: #D8383F;
 }
+footer {
+    background: #1D1D1E;
+    color: white;
+    width: 100%;
+}
+footer a{
+    color: white;
+    font-size: 0.9rem;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #D8383F;
+}
+.footerAll {
+    width: 90%;
+}
+
+.info::before {
+    content: "\e938";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.musee::before {
+    content: "\e921";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.presse::before {
+    content: "\e927";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.follow::before {
+    content: "\e939";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.twitter::before {
+    content: "\e934";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.facebook::before {
+    content: "\e93a";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.insta::before {
+    content: "\e91c";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.youtube::before {
+    content: "\e93c";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.beforeFooter h3 a{
+    font-size: 1.2rem !important;
+}
+.contacter span::before {
+    content: "\e92b";
+    font-family: 'pba';
+    font-size: 1.4rem;
+}
+.emotion span::before {
+    content: "\e92e";
+    font-family: 'pba';
+    font-size: 1.4rem;
+}
+@media (max-width:767px){
+    footer .list-inline-item {
+        display: block !important;
+    }
+    footer .list-inline ul{
+        padding:5px;
+    }
+    .contacter span::before {
+        content: "\e92b";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .emotion span::before {
+        content: "\e92e";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .info::before {
+        content: "\e938";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .musee::before {
+        content: "\e921";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .presse::before {
+        content: "\e927";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .twitter::before {
+        content: "\e934";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .facebook::before {
+        content: "\e93a";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .insta::before {
+        content: "\e91c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .youtube::before {
+        content: "\e93c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    footer h2 {
+        font-size: 1.1rem;
+    }
+    .icon {
+        display: inherit;
+    }
+
+}
 
 /* ==========================================================================
    Helper classes
