@@ -98,20 +98,331 @@ textarea {
    ========================================================================== */
 
 
+@media (min-width: 768px) {
+    .individuel {
+        background: url("../img/Individuel.jpg") !important;
+    }
+    .groupe {
+        background: url("../img/Groupe.jpg") !important;
+    }
+    .famille {
+        background: url("../img/Famille.jpg") !important;
+    }
+    .etudiant {
+        background: url("../img/Etudiant.jpg") !important;
+    }
+    .enseignant {
+        background: url("../img/Enseignant.jpg") !important;
+    }
+    .main-group {
+        height: 512px;
+    }
+    .card p {
+        background: rgba(233, 232, 234, 0.7) !important;
+    }
+    .card p:hover, .card em:hover {
+        color: #D8383F !important;
+        cursor: pointer;
+    }
+    .card p {
+        margin: auto;
+        height: 60px;
+        position: relative;
+        top: 200px !important;
+    }
+    .pba {
+        font-size: 2rem !important;
+    }
+    .oeuvre4 .card-text,
+    .oeuvre8 .card-text,
+    .oeuvre12 .card-text {
+        right: 20px !important;
+        top: 30% !important;
+    }
+}
 
+.main {
+    background: #1D1D1E;
+    border: none;
+    margin: 0 !important;
+}
 
+.card p {
+    text-align: center;
+    font-size: 1.2rem;
+    background: #E9E9E9;
+}
 
+.bg-black {
+    background: #1D1D1E;
+    height: 150px;
+}
 
+.pba {
+    font-family: 'pba';
+    color: white;
+    width: auto;
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
 
+.pba::before {
+    content: "\e922";
+    margin: 20px;
+}
 
+.card {
+    background-position: center center !important;
+    background-size: cover !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
 
+.rang1 .card p,
+.rang2 .card p {
+    position: relative;
+    top: 200px;
+}
 
+.vignette {
+    background: url("../img/Beaux-Gosses.jpg");
+    height: 480px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.vignette p {
+    background: rgba(255, 255, 255, 1) !important;
+    font-family: "lovelo" !important;
+    width: 224px;
+    height: 139px;
+    position: relative;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+.vignette em {
+    position: relative;
+    top: 70px;
+    font-size: 1rem !important;
+}
+.vignette .card-text em {
+    color: #868687;
+}
 
+.vignette .card-text em::before {
+    content: "\e907";
+    font-family: 'pba';
+    font-style: normal;
+    margin: 10px;
+}
 
+.incoutournable {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
+.oeuvre4 {
+    background: url("../img/4-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
 
+.oeuvre8 {
+    background: url("../img/8-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
 
+.oeuvre12 {
+    background: url("../img/12-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
 
+.oeuvre4 .card-text,
+.oeuvre8 .card-text,
+.oeuvre12 .card-text {
+    background: rgba(255, 255, 255, 1) !important;
+    position: relative;
+    height: 150px;
+    margin: auto;
+    top: 30%;
+    text-align: right !important;
+}
+
+.oeuvre4 .card-text::before,
+.oeuvre8 .card-text::before,
+.oeuvre12 .card-text::before {
+    content: "\e907";
+    font-family: 'pba';
+    font-style: normal;
+    position: relative;
+    right: 130px;
+}
+
+.oeuvre4 b,
+.oeuvre8 b,
+.oeuvre12 b {
+    font-size: 3rem;
+}
+
+.appli {
+    background: #D8383F;
+    color: #fff;
+}
+
+.appliDownload {
+    border: 2px solid #fff;
+    height: 60px;
+    line-height: 60px;
+    padding: 14px;
+}
+
+.st0,
+.st2,
+g {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    fill: #FFF;
+}
+
+.st1 {
+    fill: #D8383F;
+}
+footer {
+    background: #1D1D1E;
+    color: white;
+    width: 100%;
+}
+footer a{
+    color: white;
+    font-size: 0.9rem;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #D8383F;
+}
+.footerAll {
+    width: 90%;
+}
+
+.info::before {
+    content: "\e938";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.musee::before {
+    content: "\e921";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.presse::before {
+    content: "\e927";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.follow::before {
+    content: "\e939";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.twitter::before {
+    content: "\e934";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.facebook::before {
+    content: "\e93a";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.insta::before {
+    content: "\e91c";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.youtube::before {
+    content: "\e93c";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.beforeFooter h3 a{
+    font-size: 1.2rem !important;
+}
+.contacter span::before {
+    content: "\e92b";
+    font-family: 'pba';
+    font-size: 1.4rem;
+}
+.emotion span::before {
+    content: "\e92e";
+    font-family: 'pba';
+    font-size: 1.4rem;
+}
+@media (max-width:767px){
+    footer .list-inline-item {
+        display: block !important;
+    }
+    footer .list-inline ul{
+        padding:5px;
+    }
+    .contacter span::before {
+        content: "\e92b";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .emotion span::before {
+        content: "\e92e";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .info::before {
+        content: "\e938";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .musee::before {
+        content: "\e921";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .presse::before {
+        content: "\e927";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .twitter::before {
+        content: "\e934";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .facebook::before {
+        content: "\e93a";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .insta::before {
+        content: "\e91c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .youtube::before {
+        content: "\e93c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    footer h2 {
+        font-size: 1.1rem;
+    }
+    .icon {
+        display: inherit;
+    }
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -143,7 +454,7 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
 }
 
 /*
@@ -185,8 +496,9 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table;
+
 }
 
 .clearfix:after {
@@ -207,6 +519,7 @@ textarea {
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
+
     /* Style adjustments for high resolution devices */
 }
 
@@ -231,6 +544,7 @@ textarea {
     a:visited {
         text-decoration: underline;
     }
+
 
     a[href]:after {
         content: " (" attr(href) ")";
@@ -263,6 +577,7 @@ textarea {
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+
 
     thead {
         display: table-header-group;
@@ -613,3 +928,5 @@ textarea {
 }
 
 /*************************Reste video et fin header à faire, slider (images écrasées) et puces, les hover
+    }
+
