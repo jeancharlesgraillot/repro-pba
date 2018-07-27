@@ -97,12 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html,
-body {
-    font-family: 'Arial, Helvetica, sans-serif';
-    padding: 0 !important;
-    margin: 0 !important;
-}
 
 @media (min-width: 768px) {
     .individuel {
@@ -461,7 +455,6 @@ footer a:hover{
     position: absolute;
     width: 1px;
     white-space: nowrap;
-    /* 1 */
 }
 
 /*
@@ -504,9 +497,8 @@ footer a:hover{
 .clearfix:before,
 .clearfix:after {
     content: " ";
-    /* 1 */
     display: table;
-    /* 2 */
+
 }
 
 .clearfix:after {
@@ -524,9 +516,10 @@ footer a:hover{
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+
     /* Style adjustments for high resolution devices */
 }
 
@@ -541,30 +534,36 @@ footer a:hover{
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
-        /* Black prints faster */
+        color: #000 !important; /* Black prints faster */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     a,
     a:visited {
         text-decoration: underline;
     }
+
+
     a[href]:after {
         content: " (" attr(href) ")";
     }
+
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
+
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
+
     pre {
         white-space: pre-wrap !important;
     }
@@ -573,25 +572,361 @@ footer a:hover{
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
+
+
     thead {
         display: table-header-group;
     }
+
     tr,
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
     }
 }
+
+/*************************************Fonts************************************/
+
+
+@font-face {
+ font-family: "lovelo";
+ src: url("../fonts/lovelo.ttf");
+}
+
+.fontlovelo {
+  font-family: "lovelo";
+}
+
+@font-face {
+ font-family: "pba";
+ src: url("../fonts/pba.ttf");
+}
+
+.fontpba {
+  font-family: "pba";
+}
+
+
+/*******************************Couleurs***************************************/
+
+.backgroundDarkGrey{
+  background-color: #1d1d1e;
+}
+
+.backgroundWhite{
+  background-color: white;
+}
+
+.backgroundOrangePink{
+  background-color: #d8383f;
+}
+
+.colorOrangePink{
+  color: #d8383f;
+}
+
+.colorWhite{
+  color: white;
+}
+
+.colorBlack{
+  color: black;
+}
+
+
+/*******************************Header*****************************************/
+
+.logoLille{
+  width: 60px;
+}
+
+.headerForm{
+  width: 175px;
+}
+
+/*******************************Main*******************************************/
+
+/*******************************Section1***************************************/
+
+.bgImage{
+  background-image: url("../img/Palais-des-Beaux-Arts-de-Lille.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 493px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.2) inset;
+}
+
+/*.videoXl{
+  height: 493px;
+  width: 100%;
+  position: relative;
+}*/
+
+.contenuTitre{
+  padding-top: 60px;
+}
+
+.contenuTitreLeft,
+.contenuTitreRight{
+  width: 100%;
+  height: 339px;
+}
+
+.borderTopLeft,
+.borderBottomLeft{
+  height: 35px;
+  border-right: 15px solid white;
+}
+
+.borderTopLeft,
+.borderTopRight{
+  border-top: 15px solid white;
+}
+
+.borderBottomLeft,
+.borderBottomRight{
+  border-bottom: 15px solid white;
+  margin-top: 70px;
+}
+
+.borderTopRight,
+.borderBottomRight{
+  height: 35px;
+  border-left: 15px solid white;
+}
+
+
+.fa-buromobelexperte{
+  padding-top: 75px;
+  margin-bottom: 25px;
+  width: 43px;
+}
+
+.fa-angle-down{
+  width: 50px;
+
+}
+
+/************************Section2-Carousel*************************************/
+
+.squareChip{
+  height: 15px;
+  width: 15px;
+  border: 2px solid white;
+}
+
+.carousel-container,
+.imgCarousel{
+  height: 500px;
+}
+
+.carousel-caption{
+  margin-bottom: 1.5rem;
+}
+
+.captionContainer{
+  height: 350px;
+}
+
+.lockBarTop,
+.lockBarBot{
+  width: 100%;
+  height: 35px;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+}
+
+.lockBarTop{
+  border-top: 15px solid white;
+  margin-bottom: 75px;
+}
+
+.lockBarBot{
+  border-bottom: 15px solid white;
+  margin-top: 75px;
+}
+
+/************************************Section3**********************************/
+
+.fourWorks{
+  height: 150px;
+}
+
+.discover{
+  font-size: 1.5rem;
+}
+
+/*************************************Section4-Gallery*************************/
+
+.keyArt div{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 430px;
+  display: flex;
+}
+
+.keyArt div:nth-child(1){
+  background-image: url("../img/Le-Concert-dans-l-oeuf_artwork_illustration.jpg")
+}
+
+.keyArt div:nth-child(2){
+  background-image: url("../img/Etude-pour-la-Madone-d-Albe_artwork_illustration.jpg")
+}
+
+.keyArt div:nth-child(3){
+  background-image: url("../img/Les-Vieilles-Le-Temps_artwork_illustration.jpg")
+}
+
+.keyArt div:nth-child(4){
+  background-image: url("../img/Le-festin-d-Herode_artwork_illustration.jpg")
+}
+
+.whiteBox{
+  align-content: flex-end;
+  width: 250px;
+  height: 170px;
+  padding: 23.5px 20px 0px 23.5px;
+}
+
+.buttonGallery span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.bG1,
+.bG2{
+  border: 3px solid white;
+}
+
+.captionContainer a,
+.bG1 a,
+.bG2 a,
+.oeuvres{
+  text-decoration: none;
+}
+
+.instagramGallery,
+.photoGallery{
+  min-height: 357px;
+  max-height: 1785px;
+
+}
+
+.photoGallery{
+  width: 100%;
+}
+
+.photoGallery{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top;
+}
+
+.instagramGallery div:nth-child(1){
+  background-image: url("../img/dame.jpg");
+}
+
+.instagramGallery div:nth-child(2){
+  background-image: url("../img/paysage.jpg");
+}
+
+.instagramGallery div:nth-child(3){
+  background-image: url("../img/musee.jpg");
+}
+
+.instagramGallery div:nth-child(4){
+  background-image: url("../img/escalier.jpg");
+}
+
+.instagramGallery div:nth-child(5){
+  background-image: url("../img/statue.jpg");
+}
+
+/************************Section5 Appli mobile*********************************/
+
+.appliMobile{
+  min-height: 150px;
+}
+
+.st0, .st2 , g {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    fill: #FFF;
+}
+.st1{
+  fill: #D8383F;
+}
+
+.appliMobile p,
+.appliMobile span{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+
+.appliMobile p span{
+  font-weight: bold;
+  border: 3px solid white;
+  line-height: 100px;
+}
+
+.imgDevices,
+.textAppli{
+  margin: 0;
+  padding: 0;
+}
+
+/****************************Lille*********************************************/
+
+.lille,
+.culture{
+  border: 3px solid black;
+}
+
+.lilleCulture span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.lilleCulture a{
+  text-decoration: none;
+}
+
+@media (min-width: 1200px){
+
+  .appliMobile p span{
+    border: 0;
+    line-height: normal;
+  }
+
+  .lille,
+  .culture{
+    border: 0;
+  }
+
+}
+
+/*************************Reste video et fin header à faire, slider (images écrasées) et puces, les hover
+    }
+
